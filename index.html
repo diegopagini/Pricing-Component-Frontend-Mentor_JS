@@ -7,16 +7,21 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./dist/assets/owl.carousel.css">
   <link rel="stylesheet" href="./dist/assets/owl.theme.default.css">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link rel="stylesheet" href="./dist/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./dist/assets/owl.carousel.min.css">
+  <title>Frontend Mentor</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <div class="owl-carousel owl-theme owl-loaded">
     <div class="owl-stage-outer">
         <div class="owl-stage">
-            <div class="owl-item">...</div>
-            <div class="owl-item">...</div>
-            <div class="owl-item">...</div>
+            <div class="owl-item"><img src="/design/active-states.jpg" alt=""></div>
+            <div class="owl-item"><img src="/design/desktop-design-monthly.jpg" alt=""></div>
+            <div class="owl-item"><img src="/design/desktop-preview.jpg" alt=""></div>
         </div>
     </div>
     <div class="owl-nav">
@@ -30,6 +35,27 @@
     </div>
 </div>
 
+
+<!-- Slider main container -->
+<div class="swiper-container">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="/design/active-states.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="/design/active-states.jpg" alt="">/div>
+      <div class="swiper-slide"><img src="/design/active-states.jpg" alt=""></div>
+      ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
   Our Pricing
   Annually
   Monthly
@@ -62,14 +88,17 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="jquery.js"></script>
   <script src="jquery.min.js"></script>
   <script src="owlcarousel/owl.carousel.min.js"></script>
-  <script src="jquery.js"></script>
   <script>
     $(document).ready(function(){
       $(".owl-carousel").owlCarousel();
     });
     </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
