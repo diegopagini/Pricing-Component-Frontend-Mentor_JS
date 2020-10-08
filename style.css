@@ -15,7 +15,7 @@
   list-style: none;
 }
 
-body {
+.body {
   display: grid;
   grid-template-rows: 200px repeat(3, 1fr);
   font-family: var(--font-family);
@@ -48,6 +48,7 @@ body {
 }
 
 .our-pricing {
+  grid-row: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -88,9 +89,19 @@ body {
   border-radius: 10px;
   color: var(--dark-grayish-blue);
 }
+
+.basic {
+  grid-row: 2;
+}
+
 .professional {
+  grid-row: 3;
   background: var(--primary);
   color: white;
+}
+
+.master {
+  grid-row: 4;
 }
 
 .info-container {
