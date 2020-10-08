@@ -93,14 +93,12 @@ body {
   color: white;
 }
 
-ul {
+.info-container {
+  width: 80%;
   text-align: center;
+  border-top: 1px solid var(--light-grayish-blue);
 }
-
-li {
-  margin: 30px 0;
-}
-
-li::after{
-  content: '';
+.info-container li {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--dark-grayish-blue);
 }
