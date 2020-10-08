@@ -1,104 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor</title>
+  </head>
+  <body class="body">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./dist/assets/owl.carousel.css">
-  <link rel="stylesheet" href="./dist/assets/owl.theme.default.css">
-  <link rel="stylesheet" href="./dist/assets/owl.theme.default.min.css">
-  <link rel="stylesheet" href="./dist/assets/owl.carousel.min.css">
-  <title>Frontend Mentor</title>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <div class="owl-carousel owl-theme owl-loaded">
-    <div class="owl-stage-outer">
-        <div class="owl-stage">
-            <div class="owl-item"><img src="/design/active-states.jpg" alt=""></div>
-            <div class="owl-item"><img src="/design/desktop-design-monthly.jpg" alt=""></div>
-            <div class="owl-item"><img src="/design/desktop-preview.jpg" alt=""></div>
-        </div>
+    <div class="our-pricing">
+      <h1>Our Pricing</h1>
+      <ul class="pricing-container">
+        <li>Annually</li>
+        <li>
+          <div class="eleccion-container">
+            <div class="eleccion"></div>
+          </div>
+        </li>
+        <li>Monthly</li>
+      </ul>
     </div>
-    <div class="owl-nav">
-        <div class="owl-prev">prev</div>
-        <div class="owl-next">next</div>
+
+    <div class="basic">
+      <h3>Basic</h3>
+      <h1>&dollar;199.99</h1>
+      <ul>
+        <li>500 GB Storage</li>
+        <li>2 Users Allowed</li>
+        <li>Send up to 3 GB</li>
+      </ul>
+      <button type="text">Learn More</button>
     </div>
-    <div class="owl-dots">
-        <div class="owl-dot active"><span></span></div>
-        <div class="owl-dot"><span></span></div>
-        <div class="owl-dot"><span></span></div>
+
+    <div class="professional">
+      <h3>Professional</h3>
+      <h1>&dollar;249.99</h1>
+      <ul>
+        <li>1 TB Storage</li>
+        <li>5 Users Allowed</li>
+        <li>Send up to 10 GB</li>
+      </ul>
+      <button type="text">Learn More</button>
     </div>
-</div>
 
+    <div class="master">
+      <h3>Master</h3>
+      <h1>&dollar;399.99</h1>
+      <ul>
+        <li>2 TB Storage</li>
+        <li>10 Users Allowed</li>
+        <li>Send up to 20 GB</li>
+      </ul>
+      <button type="text">Learn More</button>
+    </div>
 
-<!-- Slider main container -->
-<div class="swiper-container">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide"><img src="/design/active-states.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="/design/active-states.jpg" alt="">/div>
-      <div class="swiper-slide"><img src="/design/active-states.jpg" alt=""></div>
-      ...
-  </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
-
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
-</div>
-  Our Pricing
-  Annually
-  Monthly
-
-  Basic
-  &dollar;19.99
-  &dollar;199.99
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
-
-  Professional
-  &dollar;24.99
-  &dollar;249.99
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
-
-  Master
-  &dollar;39.99
-  &dollar;399.99
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-
-  <script src="jquery.js"></script>
-  <script src="jquery.min.js"></script>
-  <script src="owlcarousel/owl.carousel.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $(".owl-carousel").owlCarousel();
-    });
-    </script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
-</body>
+
+  </body>
 </html>
